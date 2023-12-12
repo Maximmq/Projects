@@ -5,7 +5,7 @@ try:
     for i in range(1, len(N)-1):
         if N[i] < N[i-1]:
             if N[i] < N[i+1]:
-                print(f'Номер локального минимума: {N[i]}')
+                print(f'Номер локального минимума: {N.index(N[i])}')
                 exit()
     print('Локального минимума нет')
 except ValueError:
