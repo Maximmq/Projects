@@ -4,8 +4,8 @@
 try:
     stroka = input('Введите строку: ').lower()
     for i in range(len(stroka)-1):
-        if ord(stroka[i]) >= ord(stroka[i+1]):
-            print(stroka.index(stroka[i]))
+        if ord(stroka[i]) > ord(stroka[i+1]):
+            print(i+1)
             exit()
     print(0)
 except ValueError:
