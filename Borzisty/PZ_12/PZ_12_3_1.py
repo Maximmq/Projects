@@ -7,11 +7,11 @@
 import random
 try:
     N = abs(int(input('Сколько случайных чисел нужно сгенерировать: ')))
-    pos = [random.randint(-100, 100) for i in range(N)]
+    pos = [random.randint(-10, 10) for i in range(N)]
     pos1, pos2 = [], []
     for i in pos:
-        [pos1.append(i) if i % 3 == 0 else pos2.append(i)]
-    print(f'{pos}{'\n'}Чисел, кратных трём: {len(pos1)}\
-          {'\n'}Всех остальных чисел: {len(pos2)}')
+        [pos1.append(i) if i % 3 == 0 and i != 0 else pos2.append(i)]
+    print(f'{pos}{'\n'}Чисел, кратных трём: {pos1,len(pos1)}\
+          {'\n'}Всех остальных чисел: {pos2,len(pos2)}')
 except ValueError:
     print('Нужно ввести целое число!')
