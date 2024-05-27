@@ -1,0 +1,13 @@
+Name: Maxim
+Password: Finale
+Specialization: Web-ломастер
+Gender: М
+HTML & CSS: True
+Perl: False
+ASP: True
+Photoshop: True
+JAVA: False
+JavaScript: False
+Flash: False
+Additional info: Hehehe
+
